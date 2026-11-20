@@ -40,17 +40,6 @@ the stub (in **NASM**, fully position-independent):
 
 since the target is a **PIE**, the stub never hardcodes an address — it locates itself at runtime (`lea [rel ...]`, RIP-relative) and reaches everything else by fixed offsets. ASLR can drop it anywhere in memory and it still lands on its feet.
 
-### >;] current stack
-
-<p align="left">
-<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-<img src="https://img.shields.io/badge/Assembly-525252?style=for-the-badge&logo=assemblyscript&logoColor=white" />
-<img src="https://img.shields.io/badge/NASM-ED1C24?style=for-the-badge&logo=gnu&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/GNU%20Make-A42E2B?style=for-the-badge&logo=gnu&logoColor=white" />
-<img src="https://img.shields.io/badge/GDB-4EAA25?style=for-the-badge&logo=gnu&logoColor=white" />
-</p>
-
 ### build & run
 
 ```sh
